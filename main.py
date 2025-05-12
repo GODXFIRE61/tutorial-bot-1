@@ -123,7 +123,7 @@ async def play(interaction: discord.Interaction, query: str):
     await interaction.response.send_message(f"Now playing: {track.title}")
 
 
-@tree.command(name="stop", description="Stop the music and clear the queue.")
+@bot.tree.command(name="stop", description="Stop the music and clear the queue.")
 async def stop(interaction: discord.Interaction):
     vc = interaction.guild.voice_client
 
